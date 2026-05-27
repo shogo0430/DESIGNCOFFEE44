@@ -43,7 +43,7 @@ header {
 	color: #fff;
 	text-align: center;
 	height: 640px;
-	background-image: url(./hero-background.jpg);
+	background-image: url(img/hero-background.jpg);
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
