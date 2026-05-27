@@ -1,0 +1,326 @@
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 40;
+
+}
+
+header {
+	padding: 10px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo {
+		display: block;
+
+		img {
+			display: block;
+			height: 60px;
+		}
+	}
+
+	nav {
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 50px;
+		}
+
+		a {
+			font-size: 14px;
+			font-weight: 400;
+
+			&:hover {
+				color: aquamarine;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.hero {
+	color: #fff;
+	text-align: center;
+	height: 640px;
+	background-image: url(./hero-background.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	h2 {
+		font-size: 48px;
+		font-weight: 700;
+		margin-top: 20px;
+	}
+
+	p {
+		font-size: 20px;
+		font-weight: 400;
+		margin-top: 20px;
+	}
+
+	a {
+		display: grid;
+		place-items: center;
+		width: 60px;
+		height: 60px;
+		background-color: #6A9631;
+		border-radius: 50%;
+		box-shadow: 0px 12px 20px rgb(0 0 0 /0.1);
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		bottom: 0;
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+}
+
+main {
+	/*共通セクション*/
+	.main-section {
+		padding: 80px 0 100px;
+		/*見出しグループ*/
+		.heading-group {
+			text-align: center;
+			margin: 0 0 60px;
+
+			h2 {
+				color: #887452;
+				font-size: 40px;
+				font-weight: 700;
+			}
+
+			span {
+				color: #222;
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: 0.08em;
+				display: block;
+				margin-top: 10px;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				width: 40px;
+				height: 4px;
+				background-color: #6A9631;
+				border-radius: 4px;
+				margin: 30px auto 0;
+			}
+		}
+	}
+}
+
+.about {
+	.layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 60px;
+	}
+
+	.image {
+		border-radius: 40px;
+		overflow: hidden;
+
+		img {
+			aspect-ratio: 5 / 4;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.text {
+		img {
+			height: 60px;
+		}
+
+		h3 {
+			font-size: 28px;
+			font-size: 700;
+			margin-top: 20px;
+		}
+
+		p {
+			margin-top: 20px;
+		}
+	}
+}
+
+.name {
+	font-size: 14px
+}
+
+.price {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.shop {
+	.layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 60px;
+	}
+
+	.text {
+		h3 {
+			text-align: center;
+			font-size: 20px;
+			font-weight: 700;
+			margin: 0 0 20px;
+			display: flex;
+			align-items: baseline;
+			gap: 1em;
+
+			span {
+				font-size: 0.6em;
+			}
+		}
+	}
+}
+
+dl {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+
+	dt,
+	dd {
+		font-size: 14px;
+		padding: 10px;
+		border-top: 1px solid #ccc;
+	}
+}
+
+.map {
+	border-radius: 40px;
+	overflow: hidden;
+
+	iframe {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 5 / 4;
+	}
+}
+
+.contact {
+	text-align: center;
+	background-color: #f3f1ee;
+
+	.layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		margin-top: 60px;
+		margin-inline: auto;
+		max-width: 700px;
+	}
+
+	.label {
+		margin-bottom: 20px;
+	}
+
+	.number {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 0;
+
+		img {
+			width: 1em;
+		}
+	}
+
+	.hour {
+		font-size: 13px;
+		display: block;
+		margin-top: 1em;
+	}
+
+	.button {
+		display: inline-block;
+		color: #fff;
+		background: #6A9631;
+		padding: 1em 2em;
+		border-radius: 8px;
+	}
+}
+
+.menu-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.menu-card {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 20px;
+	display: grid;
+	gap: 5px;
+}
+
+.menu-card img {
+	width: 100px;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.menu-card .name {
+	font-size: 14px;
+}
+
+.menu-card .price {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0;
+	text-align: right;
+}
+.button{
+	display: inline-block;
+	color: #fff;
+	background-color: #6A9631;
+	padding: 1em 8px;
+	border-radius: 8px;
+}
+footer{
+	color: #fff;
+	background-color: #887452;
+	padding: 40px 20px 20px;
+	display: grid;
+	justify-items: center;
+	gap: 40px;
+	.logo{
+		display: block;
+		img{
+			display: block;
+			height: 60px;
+		}
+	}
+	ul{
+		display: flex;
+		gap: 40px;
+		a{
+			font-size: 13px;
+		}
+	}
+.copyright{
+	font-size: 12px;
+}
+}
